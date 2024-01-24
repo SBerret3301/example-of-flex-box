@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character set and viewport for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the document -->
+    <title>Document</title>
+</head>
+<style>
+    /* Styles for the outer container */
+    div {
+        display: flex; /* Use flexbox layout for the outer container */
+        margin: 0px; /* Remove default margin */
+        padding: 0px; /* Remove default padding */
+        flex-flow: row nowrap; /* Arrange items in a single row */
+    }
+
+    /* Styles for the heading inside the outer container */
+    div h1 {
+        font-size: 2em; /* Set the font size for the heading */
+        text-align: center; /* Center-align the text within the heading */
+        background-color: rgb(180, 255, 5); /* Set the background color for the heading */
+        height: 70px; /* Set the height of the heading */
+        width: 100%; /* Set the width of the heading */
+        padding-top: 20px; /* Add top padding to the heading */
+        border-radius: 20px 20px 0px 0px; /* Apply border-radius for rounded corners */
+    }
+
+    /* Styles for the inner container */
+    div > div {
+        flex-direction: column; /* Arrange items in a column inside the inner container */
+        background-color: aqua; /* Set the background color for the inner container */
+        margin: 2px; /* Add margin around the inner container */
+        padding: 4px; /* Add padding around the inner container */
+    }
+</style>
+<body>
+    <!-- Outer container with heading -->
+    <div>
+        <h1>Flexbox Example</h1>
+    </div>
+
+    <!-- Inner container with articles -->
+    <div>
+        <!-- First article -->
+        <div>
+            <h2>First Article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, est cupiditate eum quidem laboriosam exercitationem quae expedita, aspernatur molestiae rerum nesciunt modi doloribus odit fugit, eos quod molestias eaque a.</p>
+        </div>
+
+        <!-- Second article -->
+        <div>
+            <h2>Second Article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsum porro fugiat quas incidunt maxime omnis similique in ad eius odit quia facilis, dolores quo sequi? Cumque atque error maiores!</p>
+        </div>
+
+        <!-- Third article -->
+        <div>
+            <h2>Third Article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit illum assumenda fugit libero ut commodi cum. Sapiente excepturi porro, quidem doloremque maxime omnis recusandae ratione laborum dicta ea id laboriosam?</p>
+        </div>
+    </div>
+</body>
+</html>
